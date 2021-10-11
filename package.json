@@ -1,0 +1,22 @@
+{
+  "name": "astro-theme-creek",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "postbuild": "node ./scripts/search/prepare-index.js",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/renderer-preact": "^0.2.2",
+    "astro": "^0.20.7",
+    "mark.js": "^8.11.1",
+    "tailwindcss": "^2.2.15"
+  },
+  "dependencies": {
+    "date-fns": "^2.24.0",
+    "lunr": "^2.3.9"
+  }
+}

@@ -1,0 +1,37 @@
+---
+import BaseHead from '../../components/Head/BaseHead.astro';
+import Nav from '../../components/Nav.astro';
+import HomeHeader from '../../components/HomeHeader.astro';
+import Footer from '../../components/Footer/Footer.astro'
+
+let title = 'Tags'
+let description = ''
+
+const allPosts = await Astro.fetchContent('../posts/*.md');
+const tags = [...new Set([].concat.apply([], allPosts.map(post => post.tags)))]
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+
+  <body class="bg-white text-black font-body leading-normal personality-casual">
+    <Nav />
+    
+    <main class="py-12 lg:py-20">
+      <article class="max-w-6xl mx-auto px-3">
+        <HomeHeader title={title} description={description} />
+        <section class="max-w-3xl mx-auto text-center content">
+          {tags.sort().map((tag) => (
+              <div class="mb-4">
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </div>
+          ))}
+        </section>
+      </article>
+    </main>
+    
+    <Footer />
+  </body>
+</html>
