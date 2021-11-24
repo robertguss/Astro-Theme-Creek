@@ -1,5 +1,4 @@
 ---
-import Fonts from './Fonts.astro'
 import GoogleAnalytics from './GoogleAnalytics.astro'
 
 export interface Props {
@@ -40,11 +39,12 @@ let permalink = 'https://howtocode.io';
 <meta property="twitter:image" content="/images/social.jpg" />
 
 <!-- Custom CSS -->
-<link rel="stylesheet" type="text/css" href={Astro.resolve("../../styles/global.css")}>
-<link rel="stylesheet" type="text/css" href={Astro.resolve("../../styles/main.css")}>
+<link rel="stylesheet" type="text/css" href={Astro.resolve("../../styles/global.scss")}>
+<link rel="stylesheet" type="text/css" href={Astro.resolve("../../styles/main.scss")}>
 
 <!-- Prism CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.css" />
 
-<Fonts />
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Poppins:ital,wght@0,400;0,600;1,400;1,700&display=swap" rel="stylesheet">

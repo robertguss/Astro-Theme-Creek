@@ -10,13 +10,14 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/renderer-preact": "^0.2.2",
-    "astro": "^0.20.7",
+    "astro": "^0.21.3",
+    "globby": "^12.0.2",
     "mark.js": "^8.11.1",
-    "tailwindcss": "^2.2.15"
+    "tailwindcss": "^2.2.19"
   },
   "dependencies": {
-    "date-fns": "^2.24.0",
+    "autoprefixer": "^10.4.0",
+    "date-fns": "^2.26.0",
     "lunr": "^2.3.9"
   }
 }
