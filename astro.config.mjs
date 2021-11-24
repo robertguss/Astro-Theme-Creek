@@ -6,4 +6,8 @@ export default {
   vite: {
     plugins: [],
   },
+  buildOptions: {
+    site: "https://astro-theme-creek.netlify.app/",
+    sitemap: true,
+  },
 };
