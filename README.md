@@ -23,4 +23,4 @@ This theme also take's some ideas and functionality from [Ink](https://github.co
 
 ## Misc.
 
-This theme is used to power my personal site [HowToCode.io](https://howtocode.io). I am in the process of creating a tutorial on how this theme was built. So if you are interested in learning more about Astro and how to build sites with it, stay tuned...
+This theme used to power my personal site [HowToCode.io](https://howtocode.io), the repo of which can be found [here](https://github.com/robertguss/HowToCode-Astro)
