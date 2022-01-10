@@ -1,6 +1,8 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./public/**/*.html", "./src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}"],
+  content: [
+    "./public/**/*.html",
+    "./src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}",
+  ],
   important: true,
   theme: {
     borderColor: (theme) => ({
@@ -106,9 +108,6 @@ module.exports = {
         "9xl": "7rem",
       },
     },
-  },
-  variants: {
-    inset: ["responsive", "hover"],
   },
   plugins: [],
 };
