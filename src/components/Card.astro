@@ -1,6 +1,6 @@
 ---
-import { format, parseISO } from 'date-fns/fp'
-  
+import dayjs from 'dayjs'
+
 export interface Props {
   post: any;
 }
@@ -19,7 +19,7 @@ const { post } = Astro.props;
       {post.title}
     </h2>
     <p class="text-xs text-gray-600 mt-4 flex items-center">
-      {format('MM-dd-yyyy', parseISO(post.date))}
+      {dayjs(post.date).format('MM-DD-YYYY')}
     </p>
   </div>
 </a>
