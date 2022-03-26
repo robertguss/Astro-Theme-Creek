@@ -2,7 +2,7 @@
 
 /** @type {import('astro').AstroUserConfig} */
 export default {
-  renderers: [],
+  integrations: [],
   vite: {
     plugins: [],
   },
