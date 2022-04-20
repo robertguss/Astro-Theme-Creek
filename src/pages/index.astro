@@ -15,6 +15,7 @@ let seoDescription = 'Creek is a theme for Astro static site generator';
 
 let allPosts = Astro.fetchContent<MarkdownFrontmatter>('./posts/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+allPosts = allPosts.filter((a) => !a.draft); // filter out draft pages
 ---
 
 <html lang="en">
