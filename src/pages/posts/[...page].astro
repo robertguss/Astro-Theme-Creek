@@ -9,6 +9,7 @@ import Paginator from '../../components/Paginator.astro'
 export async function getStaticPaths({ paginate, rss }) {
   let allPosts = Astro.fetchContent('./*.md');
   allPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+  allPosts = allPosts.filter((a) => !a.draft);
 
   rss({
     title: 'Creek',
