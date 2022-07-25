@@ -6,23 +6,12 @@ import Card from '../../components/Card.astro';
 import Footer from '../../components/Footer/Footer.astro'
 import Paginator from '../../components/Paginator.astro'
 
-export async function getStaticPaths({ paginate, rss }) {
-  const allPosts = await Astro.glob('./*.md');
-  const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await Astro.glob<MarkdownFrontmatter>('./*.md');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 
-  rss({
-    title: 'Creek',
-    description: 'A Theme for Astro',
-    customData: `<language>en-us</language>`,
-    items: sortedPosts.map(post => ({
-      title: post.frontmatter.title,
-      description: post.frontmatter.description,
-      link: `posts/${post.frontmatter.slug}`,
-      pubDate: post.frontmatter.date,
-    })),
-  })
 
-  return paginate(allPosts, {
+  return paginate(sortedPosts, {
     pageSize: 21
   })
 }

@@ -18,7 +18,7 @@ const { post } = Astro.props;
       {post.frontmatter.title}
     </h2>
     <p class="text-xs text-gray-600 mt-4 flex items-center">
-      {dayjs(post.frontmatter.date).format('MM-DD-YYYY')}
+      {dayjs(post.frontmatter.pubDate).format('MM-DD-YYYY')}
     </p>
   </div>
 </a>

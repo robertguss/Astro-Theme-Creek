@@ -7,7 +7,7 @@ import Footer from '../../../components/Footer/Footer.astro'
 
 export async function getStaticPaths({ }) {
   let allPosts = await Astro.glob('../../posts/*.md')
-  allPosts = allPosts.sort((a, b) => new Date(a.date).valueOf() - new Date(b.date).valueOf());
+  allPosts = allPosts.sort((a, b) => new Date(a.pubDate).valueOf() - new Date(b.pubDate).valueOf());
   const allTags = new Set()
   allPosts.map(post => {
     post.tags && post.tags.map(tag => allTags.add(tag.toLowerCase()))
