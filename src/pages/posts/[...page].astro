@@ -7,24 +7,24 @@ import Footer from '../../components/Footer/Footer.astro'
 import Paginator from '../../components/Paginator.astro'
 
 export async function getStaticPaths({ paginate, rss }) {
-  let allPosts = Astro.fetchContent('./*.md');
-  allPosts = allPosts.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+  const allPosts = await Astro.glob('./*.md');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 
   rss({
     title: 'Creek',
     description: 'A Theme for Astro',
     customData: `<language>en-us</language>`,
-    items: allPosts.map(item => ({
-      title: item.title,
-      description: item.description,
-      link: `posts/${item.slug}`,
-      pubDate: item.date,
+    items: sortedPosts.map(post => ({
+      title: post.frontmatter.title,
+      description: post.frontmatter.description,
+      link: `posts/${post.frontmatter.slug}`,
+      pubDate: post.frontmatter.date,
     })),
   })
 
-    return paginate(allPosts, {
-      pageSize: 21
-    })
+  return paginate(allPosts, {
+    pageSize: 21
+  })
 }
 
 const { page } = Astro.props
@@ -35,22 +35,26 @@ let seoDescription = '';
 ---
 
 <html lang="en">
-  <head>
-    <BaseHead title={seoTitle} description={seoDescription} />
-  </head>
 
-  <body class="bg-white text-black font-body leading-normal personality-casual">
-    <Nav />
+<head>
+  <BaseHead title={seoTitle} description={seoDescription} />
+</head>
 
-    <main class="py-12 lg:py-20">
-      <article class="max-w-6xl mx-auto px-3">
-        <HomeHeader title={pageTitle} description={pageDescription} />
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
-          {page.data.map(p => <div class="col-span-1"><Card post={p} /></div>)}
-        </section>
-      </article>
-    </main>
-    <Paginator page={page} />
-    <Footer />
-  </body>
+<body class="bg-white text-black font-body leading-normal personality-casual">
+  <Nav />
+
+  <main class="py-12 lg:py-20">
+    <article class="max-w-6xl mx-auto px-3">
+      <HomeHeader title={pageTitle} description={pageDescription} />
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
+        {page.data.map(p => <div class="col-span-1">
+          <Card post={p} />
+        </div>)}
+      </section>
+    </article>
+  </main>
+  <Paginator page={page} />
+  <Footer />
+</body>
+
 </html>

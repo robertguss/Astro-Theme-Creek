@@ -10,15 +10,17 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "1.0.0-beta.73",
+    "astro": "^1.0.0-beta.73",
     "globby": "^13.1.1",
     "mark.js": "^8.11.1",
     "sass": "^1.49.9",
     "tailwindcss": "^3.1.6"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^0.2.6",
     "autoprefixer": "^10.4.4",
     "dayjs": "^1.11.0",
-    "lunr": "^2.3.9"
+    "lunr": "^2.3.9",
+    "sitemap": "^7.1.1"
   }
 }
