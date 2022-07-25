@@ -1,13 +1,7 @@
-// @ts-check
+import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
 
-/** @type {import('astro').AstroUserConfig} */
-export default {
-  integrations: [],
-  vite: {
-    plugins: [],
-  },
-  buildOptions: {
-    site: "https://astro-theme-creek.netlify.app/",
-    sitemap: true,
-  },
-};
+export default defineConfig({
+  integrations: [sitemap()],
+  site: "https://astro-theme-creek.netlify.app/",
+});
