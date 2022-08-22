@@ -86,10 +86,10 @@
   dependencies:
     fast-xml-parser "^4.0.8"
 
-"@astrojs/sitemap@^0.2.6":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-0.2.6.tgz#f133976aea7bfba683a161b18ed17c3028560d2e"
-  integrity sha512-OKxVpdK8QbxUd+bTfJnsFNrbX4i/gbNws8MzHKHtF1a52mYho6ssAiFwz5dgTfmwvz41zsNlwDhW3YsUZbaxZw==
+"@astrojs/sitemap@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-1.0.0.tgz#d5e7360e08f8f3b17bb1b8faa4c882aa39d18c25"
+  integrity sha512-42GxuF5FP7RaKXZrwGLBLOX3hPv+Wl7ExJC43O0J5e34ojJkLeKf7QfwN1UwrJlqH0Ywi0Fm4/xGe482G09+wg==
   dependencies:
     sitemap "^7.1.1"
     zod "^3.17.3"
