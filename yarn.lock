@@ -720,10 +720,10 @@ ast-types@0.14.2:
   dependencies:
     tslib "^2.0.1"
 
-astro@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.5.0.tgz#a0235bb14ebb4d388c7ab84bf2f8880362d93495"
-  integrity sha512-xwneXjRT4FChouSe/cj6oJVU6Ux7Fd/7rfnh3mPlB9PTbN5UwnfCI5MjR7rTc93i169Jjh93FndrxmGX45sQBw==
+astro@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.5.2.tgz#c4c66855b184e4b5191f988eb67dd2dffb3ac6ad"
+  integrity sha512-ZzPwZYo4GgwNBiOA7xumpkbKNVT/k/ZEvEkAL2lj3NAZHnU801wk9qLlugu8ECoLT4k1j9B/SSmhLr+AhLTazw==
   dependencies:
     "@astrojs/compiler" "^0.27.1"
     "@astrojs/language-server" "^0.26.2"
