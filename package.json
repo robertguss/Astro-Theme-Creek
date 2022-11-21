@@ -20,7 +20,7 @@
     "@astrojs/rss": "^1.0.3",
     "@astrojs/sitemap": "^1.0.0",
     "autoprefixer": "^10.4.13",
-    "dayjs": "^1.11.5",
+    "dayjs": "^1.11.6",
     "lunr": "^2.3.9",
     "sitemap": "^7.1.1"
   }
