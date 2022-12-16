@@ -18,3 +18,13 @@
 .searchResultTitle {
   color: #fd2d78 !important;
 }
+
+::-moz-selection {
+  color: white;
+  background: #fd2d78;
+}
+
+::selection {
+  color: white;
+  background: #fd2d78;
+}
