@@ -37,10 +37,10 @@
     vscode-languageserver-types "^3.17.1"
     vscode-uri "^3.0.3"
 
-"@astrojs/markdown-remark@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-1.1.3.tgz#9fa985a532622043f0863c20f01c6ed01eca31e2"
-  integrity sha512-6MDuQXbrp2fZBYBIqD+0jvSqYAukiMTte6oLNHiEYsLf3KIMlVAZj6dDgUJakgL7cQ4fmzWb0HUqzVpxAsasLw==
+"@astrojs/markdown-remark@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-1.2.0.tgz#2ec7375a5e7b59ea712fb5a9d1f4ac9cbe075acb"
+  integrity sha512-Cb+uhSuukyfERknfJ8K4iJLeKJaiZWi1BTwPS4fzw0bc9kGKe5VeTRzd2E25+vaMnRTk0tN/y6QfYEMMN3Q97g==
   dependencies:
     "@astrojs/micromark-extension-mdx-jsx" "^1.0.3"
     "@astrojs/prism" "^1.0.0"
@@ -647,10 +647,10 @@ acorn@^7.0.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
-acorn@^8.7.1:
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
-  integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
+acorn@^8.7.1, acorn@^8.8.1:
+  version "8.8.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.1.tgz#0a3f9cbecc4ec3bea6f0a80b66ae8dd2da250b73"
+  integrity sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==
 
 ansi-align@^3.0.1:
   version "3.0.1"
@@ -720,14 +720,14 @@ ast-types@0.14.2:
   dependencies:
     tslib "^2.0.1"
 
-astro@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.7.2.tgz#9401c82049d057b7e5bf3b3961b266001a97d201"
-  integrity sha512-svgkfJUBcNzWV9YeoAGv+T96HjSK1j1xy1CbUA4JALU99WEvmJ1tFZBSrd1+m5xW9MuNOleSViGTfXhHfUaH9A==
+astro@^1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.9.1.tgz#77b4786da633e1b9b579299db54c28eb6bb33de2"
+  integrity sha512-aQ6rvAP4w4VCgipVYA/zPmnkuTbFrMZ/+x/sAv2W1uJHWU2iQmrVRrrjUFJl+i1TuYYlHAuC2vKK7aRyXCjD4A==
   dependencies:
     "@astrojs/compiler" "^0.31.0"
     "@astrojs/language-server" "^0.28.3"
-    "@astrojs/markdown-remark" "^1.1.3"
+    "@astrojs/markdown-remark" "^1.2.0"
     "@astrojs/telemetry" "^1.0.1"
     "@astrojs/webapi" "^1.1.1"
     "@babel/core" "^7.18.2"
@@ -741,6 +741,7 @@ astro@^1.7.2:
     "@types/babel__core" "^7.1.19"
     "@types/html-escaper" "^3.0.0"
     "@types/yargs-parser" "^21.0.0"
+    acorn "^8.8.1"
     boxen "^6.2.1"
     ci-info "^3.3.1"
     common-ancestor-path "^1.0.1"
@@ -750,9 +751,10 @@ astro@^1.7.2:
     devalue "^4.2.0"
     diff "^5.1.0"
     es-module-lexer "^1.1.0"
+    estree-walker "^3.0.1"
     execa "^6.1.0"
     fast-glob "^3.2.11"
-    github-slugger "^1.4.0"
+    github-slugger "^2.0.0"
     gray-matter "^4.0.3"
     html-entities "^2.3.3"
     html-escaper "^3.0.3"
@@ -1453,6 +1455,11 @@ estree-util-visit@^1.0.0:
     "@types/estree-jsx" "^0.0.1"
     "@types/unist" "^2.0.0"
 
+estree-walker@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-3.0.2.tgz#2d17ff18067683aaf97aed83fe0d300603db9b67"
+  integrity sha512-C03BvXCQIH/po+PNPONx/zSM9ziPr9weX8xNhYb/IJtdJ9z+L4z9VKPTB+UTHdmhnIopA2kc419ueyVyHVktwA==
+
 events@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
@@ -1594,6 +1601,11 @@ github-slugger@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-1.4.0.tgz#206eb96cdb22ee56fdc53a28d5a302338463444e"
   integrity sha512-w0dzqw/nt51xMVmlaV1+JRzN+oCa1KfcgGEWhxUG16wbdA+Xnt/yoFO8Z8x/V82ZcZ0wy6ln9QDup5avbhiDhQ==
+
+github-slugger@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-2.0.0.tgz#52cf2f9279a21eb6c59dd385b410f0c0adda8f1a"
+  integrity sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==
 
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
