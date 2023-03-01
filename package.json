@@ -17,7 +17,7 @@
     "tailwindcss": "^3.2.6"
   },
   "dependencies": {
-    "@astrojs/rss": "^2.1.0",
+    "@astrojs/rss": "^2.1.1",
     "@astrojs/sitemap": "^1.1.0",
     "autoprefixer": "^10.4.13",
     "dayjs": "^1.11.7",
