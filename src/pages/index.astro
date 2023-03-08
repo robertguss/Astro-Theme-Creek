@@ -9,9 +9,9 @@ interface MarkdownFrontmatter {
   date: number;
 }
 
-const title = 'Creek';
-const description = 'A Theme for Astro';
-const seoDescription = 'Creek is a theme for Astro static site generator';
+const title = 'Shooting Star Eats';
+const description = 'Eats so good, they are out of this world. But they will have to wait since the site is currently under construction. We will be blasting off soon!!!';
+const seoDescription = 'Shooting Star Eats. Eats so good they are out of this world. But they will have to wait since the site is currently under construction. We will be blasting off soon';
 
 const allPosts = await Astro.glob<MarkdownFrontmatter>('./posts/*.md');
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
@@ -31,7 +31,8 @@ const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valu
       <HomeHeader title={title} description={description} />
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
         {sortedPosts.map(p => <div class="col-span-1">
-          <Card post={p} />
+          <!--  <Card post={p} />-->
+          
         </div>)}
       </section>
     </article>
