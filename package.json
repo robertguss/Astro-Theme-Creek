@@ -19,7 +19,7 @@
   "dependencies": {
     "@astrojs/rss": "^2.3.1",
     "@astrojs/sitemap": "^1.1.0",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "dayjs": "^1.11.7",
     "lunr": "^2.3.9",
     "sitemap": "^7.1.1"
