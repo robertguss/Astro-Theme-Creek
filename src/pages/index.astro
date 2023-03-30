@@ -31,8 +31,7 @@ const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valu
       <HomeHeader title={title} description={description} />
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8" data-test="articles-section">
         {sortedPosts.map(p => <div class="col-span-1">
-          <!--  <Card post={p} />-->
-          
+          <Card post={p} />
         </div>)}
       </section>
     </article>
