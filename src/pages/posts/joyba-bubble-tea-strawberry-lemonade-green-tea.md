@@ -2,8 +2,8 @@
 title: "Joyba Bubble Tea - Strawberry Lemonade Green Tea - Review"
 pubDate: "2020-02-01"
 slug: "go-basics-1-installing-go-on-a-mac"
-description: "Bubble Tea Here"
-hero: "/images/Golang-Basics.png"
+description: "Joyba Bubble Tea - Strawberry Lemonade Green Tea - Review"
+hero: "/images/Joyba-Bubble-Tea-Strawberry-Lemonade-Green-Tea.jpg"
 tags: ["review"]
 layout: "../../layouts/BlogPostLayout.astro"
 author: "Victor Lam"
