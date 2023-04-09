@@ -1,9 +1,9 @@
 ---
 title: "Pepsi and Peeps have a get together"
-pubDate: "2023-04-01"
+pubDate: "2023-04-08"
 slug: "pepsi-and-peeps-have-a-get-together"
 description: "Pepsi and Peeps Mashup. As good as it sounds? Come find out"
-hero: "/images/Joyba-Bubble-Tea-Strawberry-Lemonade-Green-Tea.jpg"
+hero: "/images/Pepsi-Peep.png"
 tags: ["review"]
 layout: "../../layouts/BlogPostLayout.astro"
 author: "Victor Lam"
