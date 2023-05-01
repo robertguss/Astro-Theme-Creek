@@ -14,7 +14,7 @@
     "globby": "^13.1.4",
     "mark.js": "^8.11.1",
     "sass": "^1.62.1",
-    "tailwindcss": "^3.3.1"
+    "tailwindcss": "^3.3.2"
   },
   "dependencies": {
     "@astrojs/rss": "^2.3.2",
