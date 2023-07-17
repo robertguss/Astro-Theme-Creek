@@ -78,10 +78,10 @@
     fast-xml-parser "^4.0.8"
     kleur "^4.1.5"
 
-"@astrojs/sitemap@^1.3.3":
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-1.3.3.tgz#c96892f67899a648e7759a428306de2606dfc95a"
-  integrity sha512-TPyyb/hKxc+bHPpSoNPhsuI0QOTVzq2tueg2r0CTH1HqigYIAA2LQkCBlQzz85R+LrOZpv4kXYmhxdDcSkJCmA==
+"@astrojs/sitemap@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-1.4.0.tgz#4175fddca292c7d808aba9e8a61879cf58586e11"
+  integrity sha512-uTK77kcg7iTiik+u7rTGG6vK4ZWTfYMaVnFndOVQrLzaE5xivmQgIbVLtlN+xRcME5n/m6vYQFJmogFR+elGCw==
   dependencies:
     sitemap "^7.1.1"
     zod "^3.17.3"
