@@ -1,6 +1,7 @@
 import path from "path";
 import { promises as fs } from "fs";
 import { globby } from "globby";
+import os from "os";
 import grayMatter from "gray-matter";
 
 (async function () {
@@ -8,7 +9,10 @@ import grayMatter from "gray-matter";
   const srcDir = path.join(process.cwd(), "src");
   const publicDir = path.join(process.cwd(), "public");
   const contentDir = path.join(srcDir, "pages", "posts");
-  const contentFilePattern = path.join(contentDir, "*.md");
+  let contentFilePattern = path.join(contentDir, "*.md");
+  if(os.platform().includes("win")) {
+    contentFilePattern = contentFilePattern.replaceAll("\\", "/");
+  }
   const indexFile = path.join(publicDir, "search-index.json");
   const getSlugFromPathname = (pathname) =>
     path.basename(pathname, path.extname(pathname));
