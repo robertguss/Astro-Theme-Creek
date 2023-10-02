@@ -68,10 +68,10 @@
     sitemap "^7.1.1"
     zod "^3.17.3"
 
-"@astrojs/telemetry@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/telemetry/-/telemetry-3.0.1.tgz#4baee14a7c4271f461e4e080dffa26f09c39afa6"
-  integrity sha512-7zJMuikRDQ0LLLivteu0+y4pqdgznrChFiRrY3qmKlOEkLWD1T3u1a5M970lvpErP7Vgh4P298JBPjv8LTj+sw==
+"@astrojs/telemetry@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@astrojs/telemetry/-/telemetry-3.0.2.tgz#f0b3a6abae33e9b362924124ea9735c90c155847"
+  integrity sha512-ef+jqCkqopCzjGfsMsr+8p56Nj6F9ZzouWcWZt+dKsqbRccI3c8K3jfkLcdq4AyfFZtKBDB6N4ZuI68g33oiOg==
   dependencies:
     ci-info "^3.8.0"
     debug "^4.3.4"
@@ -832,15 +832,15 @@ array-iterate@^1.0.0:
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-1.1.4.tgz#add1522e9dd9749bb41152d08b845bd08d6af8b7"
   integrity sha512-sNRaPGh9nnmdC8Zf+pT3UqP8rnWj5Hf9wiFGsX3wUQ2yVSIhO2ShFwCoceIPpB41QF6i2OEmrHmCo36xronCVA==
 
-astro@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-3.1.1.tgz#0a2e401b4fd8ae106bb94b26884084da748650ec"
-  integrity sha512-KLtzCcLiQEsoWHJO0vQ5QZ/9/80P3cUuBeIkl87YezRkzs3Am0kuzfeGLumb6OOcrR2W0AZGlVlS0ub+q/yiaA==
+astro@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-3.2.0.tgz#699fca50f3c424ed562bae660d78d0813821e528"
+  integrity sha512-sDQnSFV46ZzNkVU6co5f8wilZFmGiWsqnIVoMhd5/XPU76iZdA40WqFyBOhGaji7hGuqbcjN8MGobMg53lsoUg==
   dependencies:
     "@astrojs/compiler" "^2.1.0"
     "@astrojs/internal-helpers" "0.2.0"
     "@astrojs/markdown-remark" "3.2.0"
-    "@astrojs/telemetry" "3.0.1"
+    "@astrojs/telemetry" "3.0.2"
     "@babel/core" "^7.22.10"
     "@babel/generator" "^7.22.10"
     "@babel/parser" "^7.22.10"
