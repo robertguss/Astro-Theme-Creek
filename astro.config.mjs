@@ -10,8 +10,5 @@ export default defineConfig({
     speedInsights:{
       enabled: true,
     },
-    imagesConfig: {
-      sizes: [320, 640, 1280],
-    },
   })
 })
