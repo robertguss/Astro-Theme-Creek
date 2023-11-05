@@ -17,14 +17,22 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
+    "@astrojs/react": "^3.0.4",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.2",
     "@astrojs/vercel": "^5.1.0",
+    "@sanity/astro": "^2.1.4",
+    "@sanity/client": "^6.7.0",
+    "@types/react": "^18.2.34",
+    "@types/react-dom": "^18.2.14",
     "@vercel/analytics": "^1.1.1",
     "astro-seo": "^0.8.0",
     "autoprefixer": "^10.4.14",
     "dayjs": "^1.11.10",
     "lunr": "^2.3.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "^3.19.1",
     "sitemap": "^7.1.1"
   }
 }
