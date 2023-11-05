@@ -1,7 +1,11 @@
-import { defineConfig } from "astro/config";
-import sitemap from "@astrojs/sitemap";
-
+import { defineConfig } from 'astro/config';
+import vercel from '@astrojs/vercel/serverless';
+ 
 export default defineConfig({
-  integrations: [sitemap()],
-  site: "https://astro-theme-creek.netlify.app/",
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
 });
