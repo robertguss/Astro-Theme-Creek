@@ -19,6 +19,7 @@
   "dependencies": {
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.2",
+    "@astrojs/vercel": "^5.1.0",
     "@vercel/analytics": "^1.1.1",
     "autoprefixer": "^10.4.14",
     "dayjs": "^1.11.10",
