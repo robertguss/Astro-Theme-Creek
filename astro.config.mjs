@@ -14,5 +14,16 @@ export default defineConfig({
       enabled: true
     }
   }),
-  integrations: [sanity(), react()]
+  integrations: [
+    sanity({
+      projectId: "<YOUR-PROJECT-ID>",
+      dataset: "<YOUR-DATASET-NAME>",
+      // Set useCdn to false if you're building statically.
+      useCdn: false,
+    }),
+    react({
+      version:
+    })]
+  ],
+});
 });
