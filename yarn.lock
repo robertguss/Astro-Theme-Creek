@@ -60,13 +60,13 @@
     fast-xml-parser "^4.2.7"
     kleur "^4.1.5"
 
-"@astrojs/sitemap@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.0.2.tgz#0000dcb36d659d0abe75b13313d95896082de41e"
-  integrity sha512-ldxCDc0+QHcq2jH4WJFcz5iBc5/SqotEqpT91dhvoLqoRUT5U21rQ6u6qA4FyRVjpd/0Nt1kFjEsRbwoB8IKiQ==
+"@astrojs/sitemap@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.0.4.tgz#15183ae76b7fb4a91bca9dfbc3d1b1345c2dc16a"
+  integrity sha512-RSqiqs0oD8zTGaClHM0YB8n7e5En+Ihi+6qKthWf47pRkzHpENwlPGvKuEL0kUFXq+GzYot9e2JYH58gtr2q0w==
   dependencies:
     sitemap "^7.1.1"
-    zod "3.21.1"
+    zod "^3.22.4"
 
 "@astrojs/telemetry@3.0.3":
   version "3.0.3"
@@ -4016,6 +4016,11 @@ zod@3.21.1:
   version "3.21.1"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.21.1.tgz#ac5bb7cf68876281ebd02f95ac4bb9a080370282"
   integrity sha512-+dTu2m6gmCbO9Ahm4ZBDapx2O6ZY9QSPXst2WXjcznPMwf2YNpn3RevLx4KkZp1OPW/ouFcoBtBzFz/LeY69oA==
+
+zod@^3.22.4:
+  version "3.22.4"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
+  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
 
 zwitch@^2.0.0:
   version "2.0.2"
