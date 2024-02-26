@@ -60,10 +60,10 @@
     fast-xml-parser "^4.2.7"
     kleur "^4.1.5"
 
-"@astrojs/sitemap@^3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.0.5.tgz#f7313c21f4eba2ba6d22936326af70f889c53414"
-  integrity sha512-60eLzNjMza3ABypiQPUC6ElOSZNZeY5CwSwgJ03hfeonl+Db9x12CCzBFdTw7A5Mq+O54xEZVUrR0tB+yWgX8w==
+"@astrojs/sitemap@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.1.1.tgz#2d0eb72d59f167f91067ff493f9b8cdf2be1cf20"
+  integrity sha512-qPgdBIcDUaea98mTtLfi5z9oXZpzSjEn/kes70/Ex8FOZZ+DIHVKRYOLOtvy8p+FTXr/9oc7BjmIbTYmYLLJVg==
   dependencies:
     sitemap "^7.1.1"
     zod "^3.22.4"
