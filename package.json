@@ -11,7 +11,7 @@
   },
   "devDependencies": {
 
-    "astro": "^4.6.3",
+    "astro": "^4.9.2",
     "globby": "^14.0.1",
     "mark.js": "^8.11.1",
     "sass": "^1.75.0",
