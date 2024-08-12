@@ -12,7 +12,7 @@
   "devDependencies": {
 
     "astro": "^4.12.2",
-    "globby": "^14.0.1",
+    "globby": "^14.0.2",
     "mark.js": "^8.11.1",
     "sass": "^1.77.8",
     "tailwindcss": "^3.4.3"
