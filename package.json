@@ -14,7 +14,7 @@
     "astro": "^4.15.11",
     "globby": "^14.0.1",
     "mark.js": "^8.11.1",
-    "sass": "^1.77.8",
+    "sass": "^1.80.4",
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
