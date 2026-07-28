@@ -1,9 +1,35 @@
 version: 2
 updates:
-  # Enable version updates for npm
   - package-ecosystem: "npm"
-    # Look for `package.json` and `lock` files in the `root` directory
     directory: "/"
-    # Check for updates once a week
+    schedule:
+      interval: "weekly"
+    # One PR per ecosystem-wide batch instead of one per package. The previous
+    # ungrouped config produced a backlog of nine PRs that each went stale as
+    # soon as the next one landed.
+    groups:
+      astro:
+        patterns:
+          - "astro"
+          - "@astrojs/*"
+      dev-tooling:
+        patterns:
+          - "tailwindcss"
+          - "autoprefixer"
+          - "postcss"
+          - "sass"
+        update-types:
+          - "minor"
+          - "patch"
+      minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Keeps the build workflow's actions current; previously unmanaged.
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
       interval: "weekly"
