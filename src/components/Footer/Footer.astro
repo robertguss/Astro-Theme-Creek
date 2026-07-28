@@ -1,18 +1,22 @@
 ---
 import Squiggle from './Squiggle.astro'
 import Social from './Social.astro'
+
+const year = new Date().getFullYear();
 ---
 
 <footer class="py-6 lg:py-12 text-center">
-  <div class="text-sm" data-test="footer-text">&copy;<script type="text/javascript"> document.write(new Date().getFullYear()); </script> Creek</div>
+  <div class="text-sm" data-test="footer-text">&copy;{year} Creek</div>
   <Social />
 </footer>
 
 <Squiggle />
 
 
-<!-- Prism JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<!-- Prism JS. is:inline keeps these as plain classic scripts; without it Astro
+     rewrites them into `import "https://..."` inside a module, which changes
+     scoping and requires CORS for what is third-party code we don't control. -->
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/toolbar/prism-toolbar.min.js"></script>
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
