@@ -12,7 +12,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.5",
-    "globby": "^14.1.0",
+    "globby": "^16.2.2",
     "gray-matter": "^4.0.3",
     "mark.js": "^8.11.1",
     "tailwindcss": "^4.3.3"
