@@ -12,12 +12,10 @@ updates:
         patterns:
           - "astro"
           - "@astrojs/*"
-      dev-tooling:
+      tailwind:
         patterns:
           - "tailwindcss"
-          - "autoprefixer"
-          - "postcss"
-          - "sass"
+          - "@tailwindcss/*"
         update-types:
           - "minor"
           - "patch"

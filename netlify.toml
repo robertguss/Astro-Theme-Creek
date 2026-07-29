@@ -1,3 +1,9 @@
 [build]
-  command = "yarn build"
+  command = "pnpm build"
   publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Netlify picks its bundled pnpm otherwise, which may not match the version in
+  # package.json's packageManager field.
+  PNPM_VERSION = "11.17.0"

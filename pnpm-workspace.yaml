@@ -1,0 +1,14 @@
+# No dependency needs to run install scripts. esbuild is the only package that
+# asks, and the build works without it, so it stays denied.
+allowBuilds:
+  esbuild: false
+
+# pnpm 11 refuses to resolve anything published in the last 24 hours
+# (minimumReleaseAge, 1440 minutes) as supply-chain protection. These three were
+# published hours before this lockfile was generated, so installs fail the policy
+# check without an exemption. They can be deleted once the versions age out; the
+# gate itself is deliberately left at its secure default.
+minimumReleaseAgeExclude:
+  - '@astrojs/internal-helpers@0.10.2'
+  - '@astrojs/markdown-satteri@0.3.5'
+  - astro@7.1.5

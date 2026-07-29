@@ -1,5 +1,6 @@
 {
-  "startCommand": "npm start",
+  "installDependencies": true,
+  "startCommand": "pnpm start",
   "env": {
     "ENABLE_CJS_IMPORTS": true
   }
