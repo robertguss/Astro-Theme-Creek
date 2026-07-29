@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* The theme still lives in tailwind.config.js: it replaces the whole spacing,
+   rotate and inset scales rather than extending them, and porting those to
+   @theme would change the generated values. @config keeps them authoritative. */
+@config "../../tailwind.config.js";

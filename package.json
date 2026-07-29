@@ -10,19 +10,17 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.5",
     "globby": "^14.1.0",
     "gray-matter": "^4.0.3",
     "mark.js": "^8.11.1",
-    "sass": "^1.102.0",
-    "tailwindcss": "^3.4.19"
+    "tailwindcss": "^4.3.3"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
-    "autoprefixer": "^10.5.4",
     "dayjs": "^1.11.21",
-    "lunr": "^2.3.9",
-    "postcss": "^8.5.24"
+    "lunr": "^2.3.9"
   }
 }

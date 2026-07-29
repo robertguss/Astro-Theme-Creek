@@ -9,6 +9,10 @@
 #searchBox {
   border: 2px solid black;
   border-radius: 5px;
+  /* Tailwind 4's preflight resets input backgrounds to transparent, so state
+     the white field the theme has always shown rather than relying on the
+     page behind it. */
+  background-color: #fff;
 }
 
 .searchResultPage {

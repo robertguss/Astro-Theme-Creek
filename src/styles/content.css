@@ -87,14 +87,12 @@
   }
 
   pre,
-  // pre&,
   >ul li pre,
   >ol li pre {
     @apply flex p-0 text-sm leading-loose mb-8;
   }
 
   pre code,
-  // pre code&,
   >ul li pre code,
   >ol li pre code {
     @apply p-2;

@@ -5,10 +5,12 @@ module.exports = {
   ],
   important: true,
   theme: {
-    borderColor: (theme) => ({
-      ...theme("colors"),
-      default: theme("colors.black", "currentColor"),
-    }),
+    // borderColor used to be redefined here as `{...theme("colors"), default:
+    // theme("colors.black")}`. Tailwind 4 derives border-<color> utilities from
+    // the palette on its own, and under v4 that theme("colors") call resolved
+    // to the stock palette rather than the extended one, which silently turned
+    // border-black into #000 instead of the theme's #12151E. The `default` key
+    // never did anything either, since the lookup name is `DEFAULT`.
     rotate: {
       "-180": "-180deg",
       "-90": "-90deg",
@@ -84,9 +86,12 @@ module.exports = {
       132: "34rem",
       140: "36rem",
     },
-    inset: (theme, { negative }) => ({
+    // Negative utilities like -top-2 are derived from these values
+    // automatically; the old `negative(theme("spacing"))` spread that used to
+    // sit here has been redundant since Tailwind 3 and Tailwind 4 no longer
+    // passes the helper at all.
+    inset: (theme) => ({
       ...theme("spacing"),
-      ...negative(theme("spacing")),
       0: "0",
       auto: "auto",
     }),
